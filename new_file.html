@@ -128,8 +128,14 @@
 					<div class="arrow" onclick="changeCont()">》</div>
 					
 			</div>
-			
-			
+			<script>
+			var backButton = document.createElement("button");  
+			backButton.textContent = "返回";  
+			backButton.onclick = function() {  
+			    window.history.back();  
+			};  
+			document.body.appendChild(backButton); 
+			</script>
 
 	</body>
 </html>
